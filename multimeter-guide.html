@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Multimeter Guide : Beginner's lab </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header> 
+        <div class = "logo-section"> 
+        <img src = "Images/Book logo main.png" alt = "Hub Logo">
+        <span class="site-title">     ELECTRONICS STARTER HUB   </span>
+        </div>
+
+        <nav class = "Main-Menu" >
+            <ul>
+                <li><a href = "index.html#HOME" class="active-btn"> HOME </a></li>
+                <li><a href = "component-library.html#COMPONENT LIBRARY " class="active-btn"> COMPONENT LIBRARY </a></li>
+                <li><a href = "about-us.html#ABOUT PROJECT " class="active-btn"> ABOUT PROJECT </a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <main style="padding-top: 40px; background-color: #f4f7f6; min-height: 100vh;">
+        
+        <section class="component-details guide-layout">
+            
+            <div class="details-header">
+                <h2>Beginner's Lab: How to Use a Multimeter</h2>
+                <a href="index.html#Guides" class="close-btn">Back to Lab</a> 
+            </div>
+
+            <div class="guide-intro">
+                <img src="Images/multimeter.png" alt="Digital Multimeter" class="guide-hero-img">
+                <p>The Digital Multimeter (DMM) is the most critical diagnostic tool for any electronics student. It allows you to "see" the invisible forces in your circuit by measuring Voltage, Current, and Resistance.</p>
+            </div>
+
+            <div class="tutorial-steps">
+                <h3>Core Measurement Techniques</h3>
+                
+                <div class="step-card">
+                    <h4>1. Measuring DC Voltage (Batteries & Power Supplies)</h4>
+                    <ol>
+                        <li>Plug the <strong>Black probe</strong> into the <strong>COM</strong> port.</li>
+                        <li>Plug the <strong>Red probe</strong> into the <strong>VΩmA</strong> port.</li>
+                        <li>Turn the dial to the DC Voltage section (usually a 'V' with straight lines) and select a range higher than what you expect to measure (e.g., 20V for a 9V battery).</li>
+                        <li>Place probes in <strong>parallel</strong> across the component.</li>
+                    </ol>
+                </div>
+
+                <div class="step-card">
+                    <h4>2. Testing for Continuity (Finding Broken Wires)</h4>
+                    <ol>
+                        <li>Turn the dial to the Continuity symbol (looks like a sound wave or diode).</li>
+                        <li>Touch the two probes together. You should hear a loud *BEEP*! This means a complete circuit exists.</li>
+                        <li>Touch the probes to either end of a wire or PCB trace. If it beeps, the connection is solid. If it remains silent, there is a break.</li>
+                    </ol>
+                    <div class="warning-box">
+                        <strong>Safety Warning:</strong> NEVER measure resistance or continuity on a live circuit with power running through it. You will blow the internal fuse of the multimeter!
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <h4>3. Testing DC Current</h4>
+                    <ol>
+                        <li>Turn the dial to the DC Current section (usually a 'A' with straight lines).</li>
+                        <li>Plug the <strong>Red probe</strong> into the <strong>mA</strong> or <strong>A</strong> port (depending on the expected current).</li>
+                        <li>Select a range higher than what you expect to measure.</li>
+                        <li>Place the multimeter in series with the component you want to measure.</li>
+                    </ol>
+                </div>
+                
+                <div class="step-card">
+                    <h4>4. Measuring Resistance (Resistors & Continuity)</h4>
+                    <ol>
+                        <li>Turn the dial to the Resistance section (usually a 'Ω' symbol).</li>
+                        <li>Place the probes across the resistor or component. The multimeter will display the resistance value.</li>
+                        <li>For continuity testing, if the resistance is very low (close to 0Ω), it indicates a good connection.</li>
+                    </ol>
+                </div>
+                
+                <div class="step-card">
+                    <h4>5. Testing Diodes</h4>
+                    <ol>
+                        <li>Turn the dial to the Diode test mode (usually a diode symbol).</li>
+                        <li>Place the red probe on the anode and the black probe on the cathode of the diode.</li>
+                        <li>A good diode will show a voltage drop (typically around 0.6-0.7V for silicon diodes) in one direction and 'OL' (over limit) in the reverse direction.</li>
+                    </ol>
+                </div>
+                
+                <div class="step-card">
+                    <h4>6. Testing Transistors</h4>
+                    <ol>
+                        <li>Turn the dial to the hFE or Transistor test mode (if available).</li>
+                        <li>Identify the transistor's pinout (Base, Collector, Emitter).</li>
+                        <li>Place the probes according to the multimeter's instructions to measure the transistor's gain (hFE) or check for shorts between pins.</li>
+                    </ol> 
+                             
+                </div>
+                
+                
+            </div>
+
+                <div class="step-card">
+                    <h4>7. Testing Capacitors</h4>
+                    <ol>
+                        <li>Turn the dial to the Capacitance test mode (if available).</li>
+                        <li>Discharge the capacitor completely before testing.</li>
+                        <li>Place the probes across the capacitor terminals. The multimeter will display the capacitance value.</li>
+                    </ol>
+                    <div class="warning-box">
+                        <strong>Safety Warning:</strong> Always discharge capacitors before testing to avoid damaging your multimeter or getting a shock!
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <h4>8. Testing Inductors</h4>
+                    <ol>
+                        <li>Turn the dial to the Inductance test mode (if available).</li>
+                        <li>Place the probes across the inductor terminals. The multimeter will display the inductance value.</li>
+                        <li>If no inductor mode is present, you can also test for continuity. A good inductor should show low resistance (close to 0Ω) indicating the coil is not broken.</li>
+                    </ol>
+                </div>
+
+
+            </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>A Foundation of Computing Course project, ECE, CET @2026</p>
+        </div>
+    </footer>
+
+</html>

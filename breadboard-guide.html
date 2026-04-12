@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Breadboard Basics : Beginner's Lab </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header> 
+        <div class = "logo-section"> 
+        <img src = "Images/Book logo main.png" alt = "Hub Logo">
+        <span class="site-title">     ELECTRONICS STARTER HUB   </span>
+        </div>
+
+        <nav class = "Main-Menu" >
+            <ul>
+                <li><a href = "index.html#HOME" class="active-btn"> HOME </a></li>
+                <li><a href = "component-library.html#COMPONENT LIBRARY " class="active-btn"> COMPONENT LIBRARY </a></li>
+                <li><a href = "about-us.html#ABOUT PROJECT " class="active-btn"> ABOUT PROJECT </a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main style="padding-top: 40px; background-color: #f4f7f6; min-height: 100vh;">
+        
+        <section class="component-details guide-layout">
+            
+            <div class="details-header">
+                <h2>Beginner's Lab: Breadboard Wiring Basics</h2>
+                <a href="index.html#Guides" class="close-btn">Back to Lab</a> 
+            </div>
+
+            <div class="guide-intro">
+                <img src="Images/breadboard.png" alt="Solderless Breadboard" class="guide-hero-img">
+                <p>The solderless breadboard is the foundation of electronic prototyping. It allows you to quickly connect components and test circuits without permanent soldering, utilizing a hidden internal grid of metal spring clips.</p>
+            </div>
+
+            <div class="tutorial-steps">
+                <h3>Understanding the Internal Connections</h3>
+                
+                <div class="step-card">
+                    <h4>1. The Power Rails (Horizontal Connections)</h4>
+                    <ul>
+                        <li>Located on the far top and bottom edges, usually marked with <strong>Red (+)</strong> and <strong>Blue/Black (-)</strong> lines.</li>
+                        <li>The holes in these rows are connected <strong>horizontally</strong> all the way across the board.</li>
+                        <li>Use these rails to distribute your main Power (VCC) and Ground (GND) easily to any part of your circuit.</li>
+                    </ul>
+                </div>
+
+                <div class="step-card">
+                    <h4>2. The Terminal Strips (Vertical Connections)</h4>
+                    <ul>
+                        <li>The main middle section consists of short vertical columns, usually numbered (1, 2, 3...) and lettered (a-e, f-j).</li>
+                        <li>Holes in the same column block (e.g., 1a, 1b, 1c, 1d, 1e) are connected <strong>vertically</strong> together.</li>
+                        <li>The gap in the middle (the "trench") separates the top half (a-e) from the bottom half (f-j). This trench is specifically designed to fit Integrated Circuits (ICs) so their opposite pins don't short together!</li>
+                    </ul>
+                </div>
+
+                <div class="step-card">
+                    <h4>3. Component Placement Rules</h4>
+                    <ul>
+                        <li><strong>Never</strong> plug both legs of a component (like a resistor or LED) into the exact same vertical numbered column. This creates a short circuit, bypassing the component entirely.</li>
+                        <li>Bridge connections by placing legs in different columns, and use jumper wires to jump signals across the board.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <strong>Engineer's Note:</strong> Build good habits early! Always color-code your jumper wires. Use strictly Red for VCC (+), Black for Ground (-), and other colors (Yellow, Green, Blue) for signal paths. It makes troubleshooting infinitely easier for your KTU lab evaluations.
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>A Foundation of Computing Course project, ECE, CET @2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>

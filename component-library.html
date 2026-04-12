@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Component Library - Electronics Starter Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header> 
+        <div class="logo-section"> 
+            <img src="Images/Book logo main.png" alt="Hub Logo">
+            <span class="site-title">ELECTRONICS STARTER HUB</span>
+        </div>
+
+        <nav class="Main-Menu">
+            <ul>
+                <li><a href = "index.html#HOME" class="active-btn"> HOME </a></li>
+                <li><a href = "component-library.html#COMPONENT LIBRARY " class="active-btn"> COMPONENT LIBRARY </a></li>
+                <li><a href = "about-us.html#ABOUT PROJECT " class="active-btn"> ABOUT PROJECT </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding-top: 40px; background-color: #f4f7f6; min-height: 100vh; padding-bottom: 60px;">
+        
+        <section class="component-details" style="max-width: 1200px;">
+            
+            <div class="details-header">
+                <h2>Master Component Library</h2>
+                <p style="color: #555; margin-top: 5px;">A quick-reference guide to the most common electronic components used in laboratory environments.</p>
+            </div>
+
+            <div class="library-section">
+                <h3 class="table-title">1. Resistors (Wattage & Packages)</h3>
+                <table class="library-table">
+                    <thead>
+                        <tr>
+                            <th>Type / Material</th>
+                            <th>Typical Wattage</th>
+                            <th>Key Characteristics & Lab Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Carbon Film (Through-Hole)</strong></td>
+                            <td>1/4 W (0.25W)</td>
+                            <td>The standard beige resistors used in almost all breadboard projects. Usually 4-band color code. Inexpensive and perfect for basic current limiting.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Metal Film (Through-Hole)</strong></td>
+                            <td>1/4 W or 1/2 W</td>
+                            <td>Typically blue in color. Used when higher precision (1% tolerance) is needed. Usually features a 5-band color code.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wirewound (Power)</strong></td>
+                            <td>1W to 10W+</td>
+                            <td>Large, rectangular ceramic blocks. Used in power supplies or motor circuits where large amounts of heat need to be dissipated safely.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SMD (Surface Mount)</strong></td>
+                            <td>1/10 W to 1/8 W</td>
+                            <td>Tiny rectangular chips (e.g., 0805, 0603 packages) soldered directly to PCBs. Printed with a 3 or 4 digit numerical code instead of color bands.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="library-section" style="margin-top: 50px;">
+                <h3 class="table-title">2. Capacitors (Types & Polarity)</h3>
+                <table class="library-table">
+                    <thead>
+                        <tr>
+                            <th>Capacitor Type</th>
+                            <th>Polarity</th>
+                            <th>Typical Range & Application</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Ceramic Disc</strong></td>
+                            <td>Non-Polarized</td>
+                            <td>Picofarad (pF) to Nanofarad (nF). Tiny orange/brown discs. Used for high-frequency noise filtering and decoupling near ICs.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Electrolytic (Aluminum)</strong></td>
+                            <td>Polarized (+/-)</td>
+                            <td>Microfarad (µF) to Millifarad (mF). Cylindrical cans. Used for bulk power smoothing and low-frequency filtering. Explodes if wired backwards!</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tantalum</strong></td>
+                            <td>Polarized (+/-)</td>
+                            <td>Nanofarad (nF) to Microfarad (µF). Small, yellow bead-like drops. Highly stable capacitance, used in precise timing and audio circuits.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Polyester Film (Mylar)</strong></td>
+                            <td>Non-Polarized</td>
+                            <td>Nanofarad (nF) to Microfarad (µF). Green or red rectangular "chiclets". Great for audio coupling and handling higher voltages.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="library-section" style="margin-top: 50px;">
+                <h3 class="table-title">3. Transistors & MOSFETs (Active Components)</h3>
+                <table class="library-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">Part Number</th>
+                            <th>Description & Characteristics</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-subheading"><td colspan="2">General Purpose BJT (NPN) - Small-signal amplification and switching</td></tr>
+                        <tr><td><strong>BC547</strong></td><td>The most common NPN transistor for beginners in India/labs.</td></tr>
+                        <tr><td><strong>2N2222</strong></td><td>Famous high-speed switching NPN transistor in a metal or plastic (PN2222) case.</td></tr>
+                        <tr><td><strong>2N3904</strong></td><td>Standard North American general-purpose NPN.</td></tr>
+                        <tr><td><strong>BC548</strong></td><td>Lower voltage version of BC547, often used in audio pre-amps.</td></tr>
+                        <tr><td><strong>BC549</strong></td><td>Low-noise version of BC547, great for sensitive audio circuits.</td></tr>
+
+                        <tr class="table-subheading"><td colspan="2">General Purpose BJT (PNP) - Complementary pairs to the NPNs above; high-side switching</td></tr>
+                        <tr><td><strong>BC557</strong></td><td>The PNP equivalent of the BC547.</td></tr>
+                        <tr><td><strong>2N3906</strong></td><td>The PNP equivalent of the 2N3904.</td></tr>
+                        <tr><td><strong>2N2907</strong></td><td>The PNP equivalent of the 2N2222.</td></tr>
+                        <tr><td><strong>BC558</strong></td><td>Standard PNP for low-power signal processing.</td></tr>
+
+                        <tr class="table-subheading"><td colspan="2">Medium & High Power BJTs - Driving motors, solenoids, or high-power LEDs</td></tr>
+                        <tr><td><strong>BD139</strong></td><td>Popular NPN power transistor, often used in class AB amplifiers.</td></tr>
+                        <tr><td><strong>BD140</strong></td><td>PNP complement to BD139.</td></tr>
+                        <tr><td><strong>TIP31C</strong></td><td>3A NPN power transistor for switching and amplification.</td></tr>
+                        <tr><td><strong>TIP32C</strong></td><td>3A PNP complement to TIP31C.</td></tr>
+                        <tr><td><strong>2N3055</strong></td><td>Iconic NPN power transistor in a TO-3 metal "hat" package, used in power supplies.</td></tr>
+                        <tr><td><strong>MJE13007</strong></td><td>High-voltage NPN used in SMPS and CFL circuits.</td></tr>
+
+                        <tr class="table-subheading"><td colspan="2">Darlington Transistors - Used when very high current gain (hFE) is required</td></tr>
+                        <tr><td><strong>TIP122</strong></td><td>High-current NPN Darlington (5A), very common for microcontroller motor control.</td></tr>
+                        <tr><td><strong>TIP127</strong></td><td>PNP Darlington equivalent to TIP122.</td></tr>
+
+                        <tr class="table-subheading"><td colspan="2">MOSFETs (N-Channel & P-Channel) - High-efficiency switching and PWM applications</td></tr>
+                        <tr><td><strong>IRFZ44N</strong></td><td>Very popular N-channel MOSFET for high current (up to 49A).</td></tr>
+                        <tr><td><strong>2N7000</strong></td><td>Small-signal N-channel MOSFET, often called the "FET version of 2N3904."</td></tr>
+                        <tr><td><strong>IRF540N</strong></td><td>Medium voltage, high current N-channel MOSFET.</td></tr>
+                        <tr><td><strong>IRF9540</strong></td><td>P-channel complement to the IRF540.</td></tr>
+                        <tr><td><strong>BS170</strong></td><td>Logic-level N-channel MOSFET, perfect for 5V microcontrollers.</td></tr>
+
+                        <tr class="table-subheading"><td colspan="2">JFETs & Specialized Types - High-impedance inputs or RF circuits</td></tr>
+                        <tr><td><strong>2N5457</strong></td><td>N-channel JFET used frequently in guitar pedals and audio buffers.</td></tr>
+                        <tr><td><strong>BF245</strong></td><td>N-channel JFET for VHF/UHF applications.</td></tr>
+                        <tr><td><strong>BC639</strong></td><td>Higher current (1A) small-signal NPN transistor.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>A Foundation of Computing Course project, ECE, CET @2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>

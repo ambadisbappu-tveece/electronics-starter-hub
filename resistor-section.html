@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resistor - ELECTRONICS STARRTER HUB</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class = "logo-section"> 
+        <img src = "Images/Book logo main.png" alt = "Hub Logo">
+        <span class="site-title">     ELECTRONICS STARTER HUB   </span>
+        </div>
+
+        <nav class = "Main-Menu" >
+            <ul>
+                <li><a href = "index.html#HOME" class="active-btn"> HOME </a></li>
+                <li><a href = "component-library.html#COMPONENT LIBRARY " class="active-btn"> COMPONENT LIBRARY </a></li>
+                <li><a href = "about-us.html#ABOUT PROJECT " class="active-btn"> ABOUT PROJECT </a></li>
+            </ul>
+        </nav>
+
+
+        </header>
+
+        <section style="padding-top: 40px; background-color: #f4f7f6; min-height: 100vh;">
+            <div class="component-details">
+                <div class="details-header">
+                    <h2> Resistor - Deep Dive </h2>
+                    <a href="index.html#library" class="close-btn">Back to Library</a>
+                </div>
+
+                <div class="details-content">
+                    <img src="Images/Resistor.png" alt="RESISTOR Icon">
+                    <div class="technical-specs">
+                        <h3>Technical Specifications</h3>
+                        <ul>
+                            <li><strong>Resistance Value:</strong> Measured in Ohms (Ω), it indicates how much the resistor opposes current flow. Common values include 220Ω, 1kΩ, 10kΩ, etc.</li>
+                            <li><strong>Power Rating:</strong> Indicates how much power the resistor can safely dissipate without damage. Common ratings are 1/4W, 1/2W, and 1W. Often can be found by inspecting the physical size.</li>
+                            <li><strong>Tolerance:</strong> Represents the accuracy of the resistor's resistance value. Common tolerances are ±5% (gold band) and ±10% (silver band).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tutorial-steps1" style="margin-top: 40px;">
+                <h3>Decoding the Bands: 4-Band vs. 5-Band</h3>
+                <p style="color: #555; margin-bottom: 20px;">Carbon film and metal film resistors use color bands to indicate their resistance value. Precision circuits require 5 bands, while standard breadboard circuits typically use 4 bands.</p>
+                
+                <div class="step-card1">
+                    <h4>4-Band Resistors (Standard Precision)</h4>
+                    <ul>
+                        <li><strong>Bands 1 & 2:</strong> The first two significant digits.</li>
+                        <li><strong>Band 3:</strong> The Multiplier (number of zeros to add).</li>
+                        <li><strong>Band 4:</strong> The Tolerance (Gold = ±5%, Silver = ±10%).</li>
+                    </ul>
+                </div>
+
+                <div class="step-card1">
+                    <h4>5-Band Resistors (High Precision)</h4>
+                    <ul>
+                        <li><strong>Bands 1, 2, & 3:</strong> The first three significant digits.</li>
+                        <li><strong>Band 4:</strong> The Multiplier.</li>
+                        <li><strong>Band 5:</strong> The Tolerance (Usually Brown = ±1% or Red = ±2%).</li>
+                    </ul>
+                </div>
+
+                <table class="color-code-table">
+                    <thead>
+                        <tr>
+                            <th>Color</th>
+                            <th>Digit Value</th>
+                            <th>Multiplier</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><span class="color-swatch" style="background-color: black;"></span>Black</td><td>0</td><td>× 1</td></tr>
+                        <tr><td><span class="color-swatch" style="background-color: #8B4513;"></span>Brown</td><td>1</td><td>× 10</td></tr>
+                        <tr><td><span class="color-swatch" style="background-color: red;"></span>Red</td><td>2</td><td>× 100</td></tr>
+                        <tr><td><span class="color-swatch" style="background-color: orange;"></span>Orange</td><td>3</td><td>× 1k</td></tr>
+                        <tr><td><span class="color-swatch" style="background-color: yellow;"></span>Yellow</td><td>4</td><td>× 10k</td></tr>
+                        <tr><td><span class="color-swatch" style="background-color: green;"></span>Green</td><td>5</td><td>× 100k</td></tr>
+                        <tr><td><span class="color-swatch" style="background-color: blue;"></span>Blue</td><td>6</td><td>× 1M</td></tr>
+                        <tr><td><span class="color-swatch" style="background-color: violet;"></span>Violet</td><td>7</td><td>× 10M</td></tr>
+                        <tr><td><span class="color-swatch" style="background-color: gray;"></span>Gray</td><td>8</td><td>-</td></tr>
+                        <tr><td><span class="color-swatch" style="background-color: white;"></span>White</td><td>9</td><td>-</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+        
+
+    </body>
+</html>

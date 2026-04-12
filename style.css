@@ -1,0 +1,665 @@
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   |||  ELECTRONICS STARTER HUB  |||
+   |||    CSS STYLESHEET FILE    |||
+   |||  (Last Updated: June 2024) |||
+   ||||||||||||||||||||||||||||||||||||||||
+*/
+
+/* HOME PAGE STYLES */
+
+header
+{
+    background-color : #e2f1f4;
+    display :flex;
+    justify-content : space-between;
+    align-items: center;
+    padding: 1px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position : sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays on top of other content when scrolling */
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo-section img {
+    height: 75px;          /* Shrinks your giant logo to a professional size */
+    width: auto;    
+}      
+
+.logo-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color : blue;
+    padding: 20px;
+}
+
+.site-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #003366;        /* A deep, engineering-style blue */
+}
+
+.Main-Menu ul
+{
+    display : flex;
+    list-style : none;
+    gap : 50px;
+}
+
+.Main-Menu a {
+    text-decoration: none; /* Removes the default blue underline from links */
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: color 0.3s ease; /* Makes color changes smooth */
+}
+
+
+
+.Main-Menu a.active-btn {
+    background-color: #0198ad; /* Solid teal background */
+    color: white;              /* White text to stand out */
+}
+
+.Main-Menu a.active-btn:hover {
+    background-color: #006666; /* Darker teal when hovered */
+    color: white;
+}
+
+.search-section form 
+{
+    display: flex;
+    gap : 2px;
+}
+
+.search-section input {
+    padding: 8px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 15px 0 0 15px; /* Rounds only the left corners! */
+    outline: none;
+    width: 250px;
+}
+
+.search-section button
+{
+    padding : 8px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 0 15px 15px 0;
+    outline-style: 1px solid white;
+    width: 75px;
+    color : white;
+    background-color: teal;
+    cursor: pointer;              /* Changes mouse to a clicking hand */
+    font-weight: bold;
+}
+
+.search-section button:hover 
+{
+    background-color: #006666;    /* Slightly darker teal when hovered */
+}
+
+.img-writting {
+    /* Uses a linear-gradient to put a dark blue tint over your background image so the white text is readable! */
+    background-image: linear-gradient(rgba(0, 51, 102, 0.47), rgba(0, 51, 102, 0.105)), url('Images/banner1.png');
+    background-size: cover;         /* Forces the image to cover the whole box */
+    background-position: center;    /* Keeps the image centered if the screen resizes */
+    padding: 80px 20px;             /* Massive padding to make it tall and grand */
+    text-align: left;             /* Centers all the text and buttons inside */
+    color: white; 
+    padding : 50px  50px 50px  100px  ;                  /* Makes all text inside this section white */
+}
+
+.img-text h1 
+{
+    font-size: 2.5rem;              /* Very large main heading */
+    margin-bottom: 15px;  
+            /* Space between heading and paragraph */
+}
+
+.img-text p
+{
+    font-size : 1.5rem;
+    margin-bottom: 30px;            /* Space between paragraph and button */
+    color: #e0e0e0;
+}
+
+
+.explore-button-img {
+    padding: 15px 25px;
+    background-color: #008080;      /* Teal color matching your search button */
+    color: white;
+    border: none;
+    border-radius: 20px;            /* Gives it a heavily rounded, pill shape */
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align :center;
+    
+}
+
+.explore-button-img:hover
+{
+    background-color: #006666;
+    transform: translateY(-1px);
+}
+
+.featured-components {
+    padding: 15px 40px;             /* Spacing around the entire library section */
+    background-color: #f4f7f6;      /* Very light grey/blue background for contrast */
+}
+
+.featured-components h2 {
+    text-align: center;             /* Centers the "FEATURED COMPONENTS" title */
+    color: #333;
+    margin-bottom: 40px;            /* Pushes the grid down away from the title */
+}
+
+.card-grid {
+    display: grid;                  /* Turns on CSS Grid Engine */
+    /* This next line is pure magic: It creates columns that are at least 250px wide. 
+       If the screen shrinks, it automatically stacks them! No extra code needed. */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;                      /* Spacing between the component cards */
+    max-width: 1620px;              /* Stops the grid from getting too wide on huge monitors */
+    margin: 0 auto;                 /* Centers the entire grid on the screen */
+}
+
+.card {
+    background-color: white;
+    padding: 20px 25px;
+    border-radius: 12px;            /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.39); /* Soft drop shadow */
+    text-align: center;             /* Centers the icon and text inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation setup */
+}
+
+.card:hover {
+    transform: translateY(-15px);    /* Lifts the card up by 5 pixels */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Makes the shadow bigger */
+}
+
+.card img {
+    width: 60px;                    /* Standardizes all component icons */
+    height: 60px;
+    object-fit: contain;            /* Prevents the icons from stretching */
+    margin-bottom: 15px;
+
+}
+
+.card h3 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.card h4 {
+    font-size: 0.85rem;
+    color: #666;                    /* Light grey for the subtitle */
+    margin-bottom: 15px;
+    letter-spacing: 1px;            /* Spreads the letters out slightly */
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;               /* Makes the paragraph text easier to read */
+    margin-bottom: 20px;
+}
+
+/* //////////////////////////////////////////////// */
+
+.bottom-modules-container {
+    display: flex;                /* Puts the Guides and Vendors in a row */
+    gap: 30px;                    /* Space between the two sections */
+    max-width: 2000px;            /* Keeps it aligned with your components grid */
+    margin: 40px auto;            /* Centers the whole block on the page */
+    padding: 0 40px;              /* Breathing room on the screen edges */
+    align-items: stretch;         /* Makes both sides equal height */
+}
+
+
+.guides-tutorials {
+    padding: 0px 100px;             /* Spacing around the entire library section */
+    background-color: #f4f7f6;
+    width : 50%;      /* Very light grey/blue background for contrast */
+}
+
+.guides-tutorials h2 {
+    text-align: center;             /* Centers the "FEATURED COMPONENTS" title */
+    color: #333;
+    margin-bottom: 40px;            /* Pushes the grid down away from the title */
+}
+
+.card-gt-grid {
+    display: grid;                  /* Turns on CSS Grid Engine */
+    /* This next line is pure magic: It creates columns that are at least 250px wide. 
+       If the screen shrinks, it automatically stacks them! No extra code needed. */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;                      /* Spacing between the component cards */
+    max-width: 1200px;              /* Stops the grid from getting too wide on huge monitors */
+    margin: 0 auto;                 /* Centers the entire grid on the screen */
+}
+
+.gt-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;            /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.39); /* Soft drop shadow */
+    text-align: center;             /* Centers the icon and text inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation setup */
+    display: block;          /* Forces the link to behave like a standard box */
+    text-decoration: none;   /* Removes the default blue underline */
+    color: inherit;
+}
+.gt-card:hover {
+    transform: translateY(-10px);    /* Lifts the card up by 5 pixels */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.186); /* Makes the shadow bigger */
+}
+
+
+.learn-more {
+    text-decoration: none;
+    color: #008080;                 /* Teal link */
+    font-weight: bold;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+    color :#003366     /* Underlines only when hovered */
+}
+
+/* //////////////////////////////////////////////// */
+
+.vendor-section {
+    padding: 10px 0px;          /* Matches your other section spacing */
+    display: flex;
+    justify-content: center;      /* Centers the big card on the screen */
+    background-color: #f4f7f6; 
+}
+
+/* 1. RESETTING THE LINK TO ACT LIKE A CARD */
+.vendor-promo-card {
+    display: block;               /* Forces the link to be a solid block/box */
+    text-decoration: none;        /* Removes the blue underline! */
+    color: inherit;               /* Stops the text from turning blue */
+    background-color: #cee5eb;    /* A slightly different tint to stand out */
+    border-radius: 15px;
+    padding: 30px 40px;
+    max-width: 800px;             /* Makes it a wide rectangle */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.428);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vendor-promo-card:hover {
+    transform: translateY(-15px);  /* Lifts up slightly when the mouse is anywhere inside! */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.408);
+}
+
+/* 2. THE FLEXBOX LAYOUT (Map Left, Text Right) */
+.vendor-card-content {
+    display: flex;
+    align-items: center;          /* Centers the text vertically next to the map */
+    gap: 40px;                    /* Puts a nice gap between map and text */
+}
+
+/* 3. SIZING THE MAP */
+.kerala-map {
+    width: 400px;                 /* Adjust this based on your actual map image size */
+    height: auto;
+}
+
+/* 4. TEXT AND LOGO STYLING */
+.vendor-info h2 {
+    color: #003366;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.vendor-info p {
+    color: #555;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.vendor-logos {
+    display: flex;
+    gap: 15px;                    /* Spaces out the tiny shop logos */
+}
+
+.vendor-logos img {
+    height: 30px;                 /* Keeps the shop logos very small */
+    width: auto;
+}
+
+/* //////////////////////////////////////////////// */
+
+footer {
+    background-color: #333333;      /* Dark grey bottom bar */
+    color: #ffffff;
+    text-align: center;
+    padding: 4px;
+    margin-top: 100px;           /* Pushes it down from the content above */
+}
+
+.footer-content p {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* |||||||||||||||||||||||||||||| Featured Components |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.component-details {
+    background-color: white;
+    padding: 40px;
+    margin: 0 auto;               /* Centers it on the page */
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e2f1f4;
+    padding-bottom: 15px;
+}
+
+.details-header h2 {
+    color: #003366;
+}
+
+.close-btn {
+    background-color: #0198ad;    /* Matches your main theme */
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #006666;
+}
+
+.details-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.details-content img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.technical-specs h3 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.technical-specs ul {
+    list-style-type: square;
+    margin-left: 20px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.warning-box {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #fff3cd;    /* Light yellow warning color */
+    border-left: 5px solid #ffcc00; /* Solid yellow edge */
+    color: #856404;
+    border-radius: 4px;
+}
+
+/* |||||||||||||||||||||||||||||| Beginners Guide|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.guide-intro {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.guide-hero-img {
+    width: 325px;
+    height: auto;
+}
+.step-card-img {
+    width: 200px;
+    height: auto;
+}
+.guide-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.tutorial-steps h3 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.tutorial-steps1 h3 {
+    color: #003366;
+    margin-bottom: 20px;
+    text-align:center;
+}
+.step-card {
+    background-color: #f9fbfb;
+    border-left: 4px solid #0198ad;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.step-card h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.step-card1 h4 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.step-card ul {
+    margin-left: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/*||||||||||||||||||||||||Vendor Guide |||||||||||||||||||||||||||||||*/
+.vendor-directory-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.directory-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.directory-title h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.directory-title p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* The Grid System for the Directory */
+.vendor-grid {
+    display: grid;
+    /* This creates columns that are at least 300px wide, and stacks them if the screen shrinks */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding-bottom: 60px;
+}
+
+/* Individual Shop Cards */
+.vendor-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.488);
+    display: flex;
+    flex-direction: column;         /* Stacks the text and button vertically */
+    justify-content: space-between; /* Pushes the button to the absolute bottom */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vendor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.649);
+}
+
+/*|||||||||||Shop Details Section||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.shop-details h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.shop-location {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 25px;            /* Creates space before the call button */
+}
+
+/* The Call Button */
+.call-btn {
+    display: block;
+    text-align: center;
+    background-color: #e2f1f4;      /* Light blue/teal background */
+    color: #008080;                 /* Dark teal text */
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #cee5eb;
+    transition: all 0.3s ease;
+}
+
+.call-btn:hover {
+    background-color: #008080;      /* Inverts to dark teal background on hover */
+    color: white;                   /* White text */
+}
+
+/* ____________Resistor Color Code Guide____________ */
+
+.color-code-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden; /* Keeps the rounded corners intact */
+}
+
+.color-code-table th {
+    background-color: #003366;    /* Matches your engineering blue */
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.color-code-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #444;
+}
+
+/* Adds a slight hover effect to the table rows */
+.color-code-table tbody tr:hover {
+    background-color: #f4f7f6;
+}
+
+/* The tiny colored circles next to the text */
+.color-swatch {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    border: 1px solid #ccc;       /* Gives lighter colors a visible edge */
+}
+
+/*_________-----------___________--------- Component library ---__________-----------__________*/
+.table-title {
+    color: #008080;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #e2f1f4;
+    padding-bottom: 5px;
+}
+
+.library-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 0.95rem;
+}
+
+.library-table th {
+    background-color: #003366;
+    color: white;
+    padding: 14px 20px;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.library-table td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eeeeee;
+    color: #444;
+    line-height: 1.5;
+}
+
+.library-table tbody tr:hover {
+    background-color: #f9fbfb;
+}
+
+/* Specific styling for the Category rows in the Transistor table */
+.table-subheading td {
+    background-color: #e2f1f4;
+    color: #003366;
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding: 15px 20px;
+    border-top: 2px solid #cee5eb;
+    text-transform: uppercase;
+}

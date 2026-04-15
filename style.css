@@ -663,3 +663,75 @@ footer {
     border-top: 2px solid #cee5eb;
     text-transform: uppercase;
 }
+
+/* =========================================
+   17. MOBILE RESPONSIVENESS (PHASE 1)
+   ========================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. Stack the Header Vertically */
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    /* 2. Fix the Navigation Menu */
+    .Main-Menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding-left: 0;
+    }
+
+    .Main-Menu a {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+
+    /* 3. Resize the Hero Banner */
+    .img-writting {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .img-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .img-text p {
+        font-size: 1.1rem;
+    }
+
+    /* 4. Stack the Bottom Modules */
+    .bottom-modules-container {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    
+    .guides-tutorials {
+        padding: 0;
+        width: 100%; /* Ensures the guides take full width on mobile */
+    }
+
+    /* 5. Fix the Search Bar */
+    .search-section form {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .search-section input {
+        width: 60%;
+    }
+
+    /* 6. Fix the Component Library Tables */
+    .library-section {
+        overflow-x: auto;
+        padding-bottom: 15px;
+    }
+
+    .library-table {
+        min-width: 600px;
+    }
+}

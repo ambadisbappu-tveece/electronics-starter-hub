@@ -184,7 +184,7 @@ html {
 
 .card:hover {
     transform: translateY(-15px);    /* Lifts the card up by 5 pixels */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Makes the shadow bigger */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.252); /* Makes the shadow bigger */
 }
 
 .card img {
@@ -292,8 +292,8 @@ html {
     color: inherit;               /* Stops the text from turning blue */
     background-color: #cee5eb;    /* A slightly different tint to stand out */
     border-radius: 15px;
-    padding: 30px 40px;
-    max-width: 800px;             /* Makes it a wide rectangle */
+    padding: 10px 74px;
+    max-width: 520;             /* Makes it a wide rectangle */
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.428);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -307,13 +307,14 @@ html {
 /* 2. THE FLEXBOX LAYOUT (Map Left, Text Right) */
 .vendor-card-content {
     display: flex;
+    flex-direction: column;
     align-items: center;          /* Centers the text vertically next to the map */
     gap: 40px;                    /* Puts a nice gap between map and text */
 }
 
 /* 3. SIZING THE MAP */
 .kerala-map {
-    width: 400px;                 /* Adjust this based on your actual map image size */
+    width: 300px;                 /* Adjust this based on your actual map image size */
     height: auto;
 }
 
@@ -321,7 +322,8 @@ html {
 .vendor-info h2 {
     color: #003366;
     font-size: 1.3rem;
-    margin-bottom: 8px;
+    margin-bottom: 1px;
+    
 }
 
 .vendor-info p {
@@ -329,10 +331,12 @@ html {
     font-size: 0.85rem;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .vendor-logos {
     display: flex;
+    justify-content: center;
     gap: 15px;                    /* Spaces out the tiny shop logos */
 }
 
